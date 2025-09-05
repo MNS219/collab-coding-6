@@ -49,12 +49,6 @@ def is_palindrome(s: str) -> bool:
     return s == s[::-1]
 
 
-# Example usage
-print(is_palindrome("madam"))  # True
-print(is_palindrome("racecar"))  # True
-print(is_palindrome("hello"))  # False
-print(is_palindrome("A man a plan a canal Panama"))  # True
-
 
 # ==============================
 # Contributor D Function
@@ -80,9 +74,6 @@ def main():
     once all modules are ready.
     """
     print("=== Collaborative Project Demo ===")
-    # Example (to be updated later):
-    # result_a = function_a(...)
-    # print("Function A result:", result_a)
 
 
 if __name__ == "__main__":
