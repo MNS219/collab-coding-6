@@ -1,43 +1,25 @@
 import unittest
-from main import heap_sort  
 
-class TestHeapSort(unittest.TestCase):
-    def test_sorted_array(self):
-        arr = [1, 2, 3, 4, 5]
-        expected = [1, 2, 3, 4, 5]
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
+from main import div   # replace 'your_module' with the actual filename (without .py)
 
-    def test_reverse_array(self):
-        arr = [5, 4, 3, 2, 1]
-        expected = [1, 2, 3, 4, 5]
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
+class TestDivision(unittest.TestCase):
+    def test_positive_numbers(self):
+        self.assertEqual(div(10, 2), 5)
+        self.assertEqual(div(9, 2), 4)   # floor division
 
-    def test_unsorted_array(self):
-        arr = [12, 11, 13, 5, 6, 7]
-        expected = [5, 6, 7, 11, 12, 13]
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
+    def test_negative_numbers(self):
+        self.assertEqual(div(-10, 2), -5)
+        self.assertEqual(div(10, -3), -4) # floor division rounds down
 
-    def test_with_duplicates(self):
-        arr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
-        expected = sorted(arr)
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
+    def test_zero_dividend(self):
+        self.assertEqual(div(0, 5), 0)
 
-    def test_empty_array(self):
-        arr = []
-        expected = []
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
+    def test_divide_by_one(self):
+        self.assertEqual(div(7, 1), 7)
 
-    def test_single_element(self):
-        arr = [42]
-        expected = [42]
-        heap_sort(arr)
-        self.assertEqual(arr, expected)
-
+    def test_divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(5, 0)
 
 if __name__ == "__main__":
     unittest.main()
