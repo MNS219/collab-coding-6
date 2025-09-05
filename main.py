@@ -12,21 +12,11 @@ Each contributor adds ONE function in this file.
 # Contributor A Function
 # ==============================
 # TODO: Contributor A adds their function here
-# Example format:
-# def function_a(...):
-#     """
-#     Brief description
-#
-#     Args:
-#         param: explanation
-#
-#     Returns:
-#         type: explanation
-#
-#     Author:
-#         Name (Roll No.)
-#     """
-#     pass
+def isOddEven(n):
+    if n%2==0:
+        return "Even"
+    else:
+        return "Odd"
 
 
 # ==============================
