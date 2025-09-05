@@ -20,11 +20,9 @@ A small team project simulating a real-world GitHub workflow. Each contributor a
 collab-coding-6
 ```bash
 .
-├── driver.py
-├── modules
-│   └── init.py
-├── README.md
-└── tests
+├── CONTRIBUTING.md
+├── main.py
+└── README.md
 
 ```
 ## Getting Started
