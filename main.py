@@ -33,6 +33,8 @@ Each contributor adds ONE function in this file.
 # Contributor B Function
 # ==============================
 # TODO: Contributor B adds their function here
+def add(a,b):
+    return a+b
 
 
 # ==============================
