@@ -25,22 +25,3 @@ collab-coding-6
 └── README.md
 
 ```
-## Getting Started
-```bash
-# Clone
-git clone https://github.com/<org-or-user>/collab-coding-<groupID>.git
-cd collab-coding-<groupID>
-
-
-# Setup
-python -m venv .venv
-source .venv/bin/activate # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-
-# Run tests
-pytest -q
-
-
-# Run driver
-python driver.py
