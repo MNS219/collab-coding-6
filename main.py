@@ -42,6 +42,29 @@ add(2,3)
 # Contributor C Function
 # ==============================
 # TODO: Contributor C adds their function here
+def is_palindrome(s: str) -> bool:
+    """
+    Check if a given string is a palindrome.
+    
+    Args:
+        s (str): The input string.
+    
+    Returns:
+        bool: True if the string is a palindrome, False otherwise.
+    """
+    # Normalize the string: remove spaces and make lowercase
+    s = s.replace(" ", "").lower()
+    
+    # Compare string with its reverse
+    return s == s[::-1]
+
+
+# Example usage
+print(is_palindrome("madam"))       # True
+print(is_palindrome("racecar"))     # True
+print(is_palindrome("hello"))       # False
+print(is_palindrome("A man a plan a canal Panama"))  # True
+
 
 
 # ==============================
