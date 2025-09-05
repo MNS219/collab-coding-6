@@ -35,7 +35,7 @@ Each contributor adds ONE function in this file.
 # TODO: Contributor B adds their function here
 def addn(a,b):
     return a+b
-add(2,3)
+
 
 
 # ==============================
